@@ -1,0 +1,44 @@
+<div style="background: url('https://static.vecteezy.com/system/resources/previews/003/032/526/non_2x/halloween-seamless-pattern-with-orange-scary-faces-vector.jpg')">
+    <audio controls loop src="http://muzovichkoff.com/uploads/files/2019-03/1551772107429_1551772107.mp3" style="position: absolute; top: 120px; right: 10px"></audio>
+    <img src="grear.png" style="width: 100%">
+    <div style="width: 50%; height: 50%; margin: 0 auto; padding: 10px; background: url(shar.png); background-repeat: no-repeat;background-position: center; position: relative" class="ball">
+        <img src="pow.png" style="width: 50%; margin-left: 80%; display: none" class="pow">
+        <div style="margin: auto; position: absolute; top: 50px; left: 0; bottom: 0; right: 0; width: 60%" class='sb'>
+
+        </div>
+
+    </div>
+</div>
+<script>
+    var ball = document.querySelector('.ball')
+    var pow = document.querySelector('.pow')
+    var boxText = document.querySelector('.sb')
+    var powRandom = ['https://www.pinclipart.com/picdir/big/69-692921_wow-wow-effect-expression-comic-comics-emetcomics-stic.png', 'pow.png', 'https://cdn3.iconfinder.com/data/icons/pop-art/130/41-512.png', 'https://cdn130.picsart.com/261727182014212.png']
+    var answers = ['Точно да',
+        'Духи говорят да',
+        'Возможно',
+        'Шансы хорошие',
+        'Неясно',
+        'Без сомнений',
+        'Шансы хорошие',
+        'Спросите снова',
+        'Думаю нет',
+        'Духи говорят нет',
+        'Не могу сказать',
+        'Есть сомнения',
+        'Не сейчас',
+        'Мало шансов',
+        'Да',
+        'Спросите позже',
+        'Непонятно',
+        'Очень вероятно',
+    ]
+    ball.onmousedown = function() {
+        var randomAnswers = Math.round(Math.random() * 17)
+        var randomPow = Math.round(Math.random() * 3)
+        pow.src = powRandom[randomPow]
+        pow.style.display = 'block'
+        boxText.innerHTML = '<center><h3 style="width: 60%; padding: 140px;background-image: url(https://i.pinimg.com/originals/85/45/0e/85450efc35280d183c2422f3b84f59db.png); background-size: contain; background-repeat: no-repeat">' + answers[randomAnswers] + '</h3></center>'
+    }
+
+</script>
