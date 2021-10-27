@@ -1,13 +1,26 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<img src="img/ans%20(1).PNG" style="width: 100%; margin-bottom: -260px" class="pic">
-<div style="width: 150px; height: 150px; background-image: url(img/03.gif); background-size: 100%; position: absolute; left: 42%" class="ball">
-</div>
-<script>
-    var img = document.querySelector('.pic')
-    var ball = document.querySelector('.ball')
-    var arrayPic = ['img/ans%20(2).PNG','img/ans%20(3).PNG','img/ans%20(4).PNG','img/ans%20(5).PNG','img/ans%20(6).PNG','img/ans%20(7).PNG','img/ans%20(8).PNG','img/ans%20(9).PNG','img/ans%20(10).PNG','img/ans%20(11).PNG','img/ans%20(12).PNG','img/ans%20(13).PNG','img/ans%20(14).PNG','img/ans%20(15).PNG','img/ans%20(16).PNG','img/ans%20(17).PNG','img/ans%20(18).PNG']
-    ball.onmousedown = function(){
-        var ran = Math.round(Math.random()*16)
-        img.src = arrayPic[ran]
-    }
-</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <img src="img/ans%20(1).PNG" style="width: 100%; margin-bottom: -260px" class="pic">
+    <div style="width: 150px; height: 150px; background-image: url(img/03.gif); background-size: 100%; position: absolute; left: 42%" class="ball">
+    </div>
+    <script>
+        var img = document.querySelector('.pic')
+        var ball = document.querySelector('.ball')
+        var arrayPic = ['img/ans%20(2).PNG', 'img/ans%20(3).PNG', 'img/ans%20(4).PNG', 'img/ans%20(5).PNG', 'img/ans%20(6).PNG', 'img/ans%20(7).PNG', 'img/ans%20(8).PNG', 'img/ans%20(9).PNG', 'img/ans%20(10).PNG', 'img/ans%20(11).PNG', 'img/ans%20(12).PNG', 'img/ans%20(13).PNG', 'img/ans%20(14).PNG', 'img/ans%20(15).PNG', 'img/ans%20(16).PNG', 'img/ans%20(17).PNG', 'img/ans%20(18).PNG']
+        ball.onmousedown = function() {
+            var ran = Math.round(Math.random() * 16)
+            img.src = arrayPic[ran]
+        }
+
+    </script>
+</body>
+
+</html>
